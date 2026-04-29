@@ -7,5 +7,7 @@ public class UserRoutes {
         public static final String CREATE_USER    = "/users/add";
         public static final String UPDATE_USER    = "/users/{id}";
         public static final String DELETE_USER    = "/users/{id}";
-        public static final String SEARCH_USERS   = "/users/search";
+
+    public static final String UPLOAD_FILE      = "/post";
+    public static final String FORM_ENCODED     = "/post";
     }
