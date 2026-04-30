@@ -2704,3 +2704,258 @@ Body:
     "json": null,
     "url": "https://postman-echo.com/post"
 }
+*********** REQUEST ***********
+URI: https://dummyjson.com/users/1
+Method: GET
+Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+Body: null
+
+
+
+
+
+*********** RESPONSE ***********
+Status Code: 200
+Response Time: 2937 ms
+Body:
+{
+    "id": 1,
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "maidenName": "Smith",
+    "age": 29,
+    "gender": "female",
+    "email": "emily.johnson@x.dummyjson.com",
+    "phone": "+81 965-431-3024",
+    "username": "emilys",
+    "password": "emilyspass",
+    "birthDate": "1996-5-30",
+    "image": "https://dummyjson.com/icon/emilys/128",
+    "bloodGroup": "O-",
+    "height": 193.24,
+    "weight": 63.16,
+    "eyeColor": "Green",
+    "hair": {
+        "color": "Brown",
+        "type": "Curly"
+    },
+    "ip": "42.48.100.32",
+    "address": {
+        "address": "626 Main Street",
+        "city": "Phoenix",
+        "state": "Mississippi",
+        "stateCode": "MS",
+        "postalCode": "29112",
+        "coordinates": {
+            "lat": -77.16213,
+            "lng": -92.084824
+        },
+        "country": "United States"
+    },
+    "macAddress": "47:fa:41:18:ec:eb",
+    "university": "University of Wisconsin--Madison",
+    "bank": {
+        "cardExpire": "05/28",
+        "cardNumber": "3693233511855044",
+        "cardType": "Diners Club International",
+        "currency": "GBP",
+        "iban": "GB74MH2UZLR9TRPHYNU8F8"
+    },
+    "company": {
+        "department": "Engineering",
+        "name": "Dooley, Kozey and Cronin",
+        "title": "Sales Manager",
+        "address": {
+            "address": "263 Tenth Street",
+            "city": "San Francisco",
+            "state": "Wisconsin",
+            "stateCode": "WI",
+            "postalCode": "37657",
+            "coordinates": {
+                "lat": 71.814525,
+                "lng": -161.150263
+            },
+            "country": "United States"
+        }
+    },
+    "ein": "977-175",
+    "ssn": "900-590-289",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+    "crypto": {
+        "coin": "Bitcoin",
+        "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+        "network": "Ethereum (ERC20)"
+    },
+    "role": "admin"
+}
+*********** REQUEST ***********
+URI: https://dummyjson.com/users/add
+Method: POST
+Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+Body: {"firstName":"Carol","lastName":"White","address":{"country":"United States","city":"New York","street":"NY 123 st"},"company":{"name":"Coding Company","department":"Development"}}
+
+
+
+
+
+*********** RESPONSE ***********
+Status Code: 201
+Response Time: 2478 ms
+Body:
+{
+    "id": 209,
+    "firstName": "Carol",
+    "lastName": "White",
+    "maidenName": "",
+    "age": null,
+    "gender": "",
+    "email": "",
+    "phone": "",
+    "username": "",
+    "password": "",
+    "birthDate": "",
+    "image": "",
+    "bloodGroup": "",
+    "height": null,
+    "weight": null,
+    "eyeColor": "",
+    "hair": {
+        "color": "",
+        "type": ""
+    },
+    "ip": "",
+    "address": {
+        "address": "",
+        "city": "New York",
+        "state": "",
+        "stateCode": "",
+        "postalCode": "",
+        "coordinates": {
+            "lat": null,
+            "lng": null
+        },
+        "country": "United States"
+    },
+    "macAddress": "",
+    "university": "",
+    "bank": {
+        "cardExpire": "",
+        "cardNumber": "",
+        "cardType": "",
+        "currency": "",
+        "iban": ""
+    },
+    "company": {
+        "department": "Development",
+        "name": "Coding Company",
+        "title": "",
+        "address": {
+            "address": "",
+            "city": "",
+            "state": "",
+            "stateCode": "",
+            "postalCode": "",
+            "coordinates": {
+                "lat": null,
+                "lng": null
+            },
+            "country": ""
+        }
+    },
+    "ein": "",
+    "ssn": "",
+    "userAgent": "",
+    "crypto": {
+        "coin": "",
+        "wallet": "",
+        "network": ""
+    },
+    "role": "user"
+}
+*********** REQUEST ***********
+URI: https://dummyjson.com/users/1
+Method: GET
+Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+Body: null
+
+
+
+
+
+*********** RESPONSE ***********
+Status Code: 200
+Response Time: 2938 ms
+Body:
+{
+    "id": 1,
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "maidenName": "Smith",
+    "age": 29,
+    "gender": "female",
+    "email": "emily.johnson@x.dummyjson.com",
+    "phone": "+81 965-431-3024",
+    "username": "emilys",
+    "password": "emilyspass",
+    "birthDate": "1996-5-30",
+    "image": "https://dummyjson.com/icon/emilys/128",
+    "bloodGroup": "O-",
+    "height": 193.24,
+    "weight": 63.16,
+    "eyeColor": "Green",
+    "hair": {
+        "color": "Brown",
+        "type": "Curly"
+    },
+    "ip": "42.48.100.32",
+    "address": {
+        "address": "626 Main Street",
+        "city": "Phoenix",
+        "state": "Mississippi",
+        "stateCode": "MS",
+        "postalCode": "29112",
+        "coordinates": {
+            "lat": -77.16213,
+            "lng": -92.084824
+        },
+        "country": "United States"
+    },
+    "macAddress": "47:fa:41:18:ec:eb",
+    "university": "University of Wisconsin--Madison",
+    "bank": {
+        "cardExpire": "05/28",
+        "cardNumber": "3693233511855044",
+        "cardType": "Diners Club International",
+        "currency": "GBP",
+        "iban": "GB74MH2UZLR9TRPHYNU8F8"
+    },
+    "company": {
+        "department": "Engineering",
+        "name": "Dooley, Kozey and Cronin",
+        "title": "Sales Manager",
+        "address": {
+            "address": "263 Tenth Street",
+            "city": "San Francisco",
+            "state": "Wisconsin",
+            "stateCode": "WI",
+            "postalCode": "37657",
+            "coordinates": {
+                "lat": 71.814525,
+                "lng": -161.150263
+            },
+            "country": "United States"
+        }
+    },
+    "ein": "977-175",
+    "ssn": "900-590-289",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+    "crypto": {
+        "coin": "Bitcoin",
+        "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+        "network": "Ethereum (ERC20)"
+    },
+    "role": "admin"
+}

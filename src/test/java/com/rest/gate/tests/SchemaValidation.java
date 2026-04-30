@@ -1,5 +1,6 @@
 package com.rest.gate.tests;
 
+import com.rest.gate.base.BaseTest;
 import com.rest.gate.base.SpecBuilder;
 import com.rest.gate.routes.UserRoutes;
 import org.testng.annotations.Test;
@@ -9,7 +10,7 @@ import java.io.IOException;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
-public class SchemaValidation {
+public class SchemaValidation extends BaseTest {
     @Test
     public void testSchemaValidation() throws IOException {
         given(SpecBuilder.getRequestSpec())
