@@ -14,7 +14,7 @@ public class FileUpload extends BaseTest {
     @Test
     public void testFileUpload() throws IOException {
 
-        File file = new File("src/test/java/com/rest/gate/schemas/userSchema.json");
+        File file = new File("src/test/resources/schemas/userSchema.json");
 
         Response response = Api.uploadFile(file);
 

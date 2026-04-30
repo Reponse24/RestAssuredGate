@@ -1,0 +1,1 @@
+{"uuid":"2f024688-2033-44e6-916e-59682880f51e","name":"com.rest.gate.tests.DeleteUser","children":["73cb52c2-4970-4d14-80e5-6767c41170c9"],"befores":[{"name":"initConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1777557303053,"stop":1777557303326}],"afters":[],"start":1777557303040,"stop":1777557306474}

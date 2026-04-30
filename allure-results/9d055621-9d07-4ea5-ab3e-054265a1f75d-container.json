@@ -1,0 +1,1 @@
+{"uuid":"9d055621-9d07-4ea5-ab3e-054265a1f75d","name":"com.rest.gate.tests.GetUser","children":["e6db8a2f-910c-47d2-a235-e9b51def7ba0"],"befores":[{"name":"initConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1777556293124,"stop":1777556293379}],"afters":[],"start":1777556293106,"stop":1777556295717}

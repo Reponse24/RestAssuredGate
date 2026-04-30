@@ -71,7 +71,7 @@ public class CreateUser extends BaseTest {
     }
 
     @Test
-    public void testCreateUserInvalidJson() throws IOException {
+    public void testCreateUserWithInvalidJson() throws IOException {
         String invalidJson = "{ firstName: John }";
 
         Response response = Api.createUser(invalidJson);

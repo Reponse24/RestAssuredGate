@@ -1,0 +1,1 @@
+{"uuid":"efa7356f-db78-48d4-9d5d-3ee77f80cadc","name":"com.rest.gate.tests.FileUpload","children":["45cc911d-a1d7-4922-bcbd-5c234832cc17"],"befores":[{"name":"initConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1777552238043,"stop":1777552238313}],"afters":[],"start":1777552238027,"stop":1777552239091}
