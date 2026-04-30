@@ -1,28 +1,29 @@
 package com.rest.gate.tests;
 
+import com.rest.gate.base.Api;
 import com.rest.gate.base.BaseTest;
-import com.rest.gate.base.SpecBuilder;
-import com.rest.gate.routes.UserRoutes;
+import com.rest.gate.statuscodes.StatusCodes;
+import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.notNullValue;
-
 public class FileUpload extends BaseTest {
-   @Test
-    public void testFileUpdload() throws IOException {
-        given(SpecBuilder.getEchoRequestSpec())
-                .contentType("multipart/form-data")
-                .multiPart("file", new File("src/test/java/com/rest/gate/schemas/userSchema.json"))
-                .multiPart("description", "Test file upload")
+    @Test
+    public void testFileUpload() throws IOException {
 
-                .when().post(UserRoutes.UPLOAD_FILE)
+        File file = new File("src/test/java/com/rest/gate/schemas/userSchema.json");
 
-                .then().spec(SpecBuilder.getResponseSpec())
-                    .statusCode(200)
-                    .body("files", notNullValue());
+        Response response = Api.uploadFile(file);
+
+        Assert.assertEquals(response.statusCode(), StatusCodes.CODE_200.code);
+
+        String data = response.jsonPath().getString("data");
+        Assert.assertNotNull(data);
+
+        System.out.println(response.prettyPrint());
     }
 }
+

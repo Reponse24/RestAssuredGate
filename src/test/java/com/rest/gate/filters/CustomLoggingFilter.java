@@ -7,7 +7,6 @@ import io.restassured.specification.FilterableRequestSpecification;
 import io.restassured.specification.FilterableResponseSpecification;
 
 import java.io.PrintStream;
-import java.time.LocalDateTime;
 
 public class CustomLoggingFilter implements Filter {
 
@@ -32,7 +31,7 @@ public class CustomLoggingFilter implements Filter {
         log("Method: " + requestSpec.getMethod());
         log("Headers: " + requestSpec.getHeaders());
         log("Body: " + requestSpec.getBody());
-        log("\n\n\n\n");
+        log("\n\n");
 
         Response response = context.next(requestSpec, responseSpec);
 

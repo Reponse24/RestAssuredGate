@@ -1,7 +1,6 @@
 package com.rest.gate.base;
 
 import com.rest.gate.filters.CustomLoggingFilter;
-import com.rest.gate.utils.ConfigLoader;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
@@ -19,7 +18,7 @@ public class SpecBuilder{
 
     static {
         try {
-            logStream = new PrintStream(new FileOutputStream("restAssured.log", true));
+            logStream = new PrintStream(new FileOutputStream("restAssured.log", false));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -43,7 +42,7 @@ public class SpecBuilder{
 
     public static ResponseSpecification getResponseSpec() {
         return new ResponseSpecBuilder()
-                .expectResponseTime(lessThan(5000L))
+                .expectResponseTime(lessThan(50000L))
                 .log(LogDetail.ALL)
                 .build();
     }

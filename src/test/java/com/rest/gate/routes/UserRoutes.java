@@ -1,7 +1,6 @@
 package com.rest.gate.routes;
 
 public class UserRoutes {
-        // All endpoints are centralized here — no hardcoding in tests
         public static final String GET_ALL_USERS  = "/users";
         public static final String GET_USER_BY_ID = "/users/{id}";
         public static final String CREATE_USER    = "/users/add";
@@ -9,5 +8,5 @@ public class UserRoutes {
         public static final String DELETE_USER    = "/users/{id}";
 
     public static final String UPLOAD_FILE      = "/post";
-    public static final String FORM_ENCODED     = "/post";
+    public static final String FORM_ENCODED     = "https://postman-echo.com/post";
     }

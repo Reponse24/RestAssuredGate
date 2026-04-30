@@ -1,0 +1,1 @@
+{"uuid":"e60dc5c4-6cdb-46e1-b55e-23230be3beb4","name":"Default Suite","children":["3b9f0779-e379-40cd-94ff-11de7e66f560"],"befores":[{"name":"setupLogFile","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1777542139301,"stop":1777542139308}],"afters":[],"start":1777542139288,"stop":1777542142542}
